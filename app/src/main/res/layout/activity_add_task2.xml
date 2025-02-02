@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:padding="16dp">
+
+    <!-- Header -->
+    <TextView
+        android:id="@+id/tv_hello"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello"
+        android:textSize="24sp"
+        android:textColor="#1E88E5"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="16dp"
+        android:contentDescription="Greeting Message" />
+
+    <TextView
+        android:id="@+id/tv_all_tasks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="All Tasks"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#1E88E5"
+        android:layout_below="@id/tv_hello"
+        android:layout_marginTop="8dp"
+        android:layout_alignParentStart="true"
+        android:contentDescription="Title for all tasks" />
+
+    <!-- Scrollable Task List -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@id/tv_all_tasks"
+        android:layout_above="@id/tv_add_task"
+        android:layout_marginTop="16dp">
+
+        <LinearLayout
+            android:id="@+id/task_list_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:contentDescription="Task List Container" />
+    </ScrollView>
+
+    <!-- Add Task Button -->
+    <Button
+        android:id="@+id/tv_add_task"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+ Add Task"
+        android:textSize="16sp"
+        android:paddingVertical="8dp"
+        android:paddingHorizontal="16dp"
+        android:backgroundTint="@color/black"
+        android:textColor="@android:color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="Add Task Button" />
+</RelativeLayout>
