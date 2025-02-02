@@ -20,9 +20,11 @@ A simple **To-Do List** application built using **Java** in **Android Studio**. 
 - **XML** – Used for designing the UI layout.  
   
 
-## Screenshots  
+## Screenshots 
+![image](https://github.com/user-attachments/assets/4af33e7d-6293-4b8a-8cc0-248f434eeada)
 
-*Include screenshots here to showcase the app's UI and functionality.*  
+
+
 
 ## Installation  
 
